@@ -80,7 +80,8 @@ def body_detection(file):
     detector.setModelTypeAsYOLOv3()
 
     # provide the location of the h5 file
-    detector.setModelPath(os.getcwd() + "/static/models/yolov3/yolo.h5")
+    # detector.setModelPath(os.getcwd() + "/static/models/yolov3/yolo.h5")
+    detector.setModelPath(os.getcwd() + "/static/models/inception_v3_weights_tf_dim_ordering_tf_kernels.h5")
 
     # load the model
     detector.loadModel()
